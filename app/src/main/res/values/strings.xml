@@ -116,6 +116,7 @@
     <string name="add_account">Add account</string>
     <string name="user_exist_with_same_name">User exist with same name</string>
     <string name="in_progress_courses_progress">Progress</string>
+    <string name="recommended_learning">Recommended</string>
 
 
 </resources>

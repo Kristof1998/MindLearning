@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="hu.droth.kristof.mindlearning.mindlearning.view.mainScreen.viewModels.IntelligenceTypeChooserViewModel" />
+            type="hu.droth.kristof.mindlearning.view.mainScreen.viewModels.IntelligenceTypeChooserViewModel" />
 
     </data>
 

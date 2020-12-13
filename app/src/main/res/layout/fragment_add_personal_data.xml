@@ -8,7 +8,7 @@
 
         <variable
             name="addPersonalDataViewModel"
-            type="hu.droth.kristof.mindlearning.mindlearning.view.authentication.fragments.AddPersonalDataViewModel" />
+            type="hu.droth.kristof.mindlearning.view.authentication.fragments.AddPersonalDataViewModel" />
     </data>
 
     <ScrollView

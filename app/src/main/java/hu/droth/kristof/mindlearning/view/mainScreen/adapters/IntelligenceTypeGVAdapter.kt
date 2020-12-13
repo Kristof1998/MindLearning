@@ -24,7 +24,8 @@ class IntelligenceTypeGVAdapter(
     private val context: Context,
     private val navController: NavController,
     private val wordTheme: WordTheme,
-    private val enum: List<IntelligenceType>
+    private val enum: List<IntelligenceType>,
+    private val recommendedLearningIntelligenceType: IntelligenceType
 ) :
     BaseAdapter() {
 
@@ -42,6 +43,18 @@ class IntelligenceTypeGVAdapter(
             IntelligenceType.MUSICAL -> R.id.action_intelligenceTypeChooserFragment_to_gameMusicalFragment
             IntelligenceType.VISUAL_HARD -> R.id.action_intelligenceTypeChooserFragment_to_gameVisualFragment
             IntelligenceType.TEST -> R.id.action_intelligenceTypeChooserFragment_to_gameTestFragment
+            IntelligenceType.RECOMMENDED_LEARNING -> getRecommendedAction()
+        }
+    }
+
+    private fun getRecommendedAction(): Int {
+        return when (recommendedLearningIntelligenceType) {
+            IntelligenceType.VERBAL -> R.id.action_intelligenceTypeChooserFragment_to_gameVerbalFragment
+            IntelligenceType.LOGICAL -> R.id.action_intelligenceTypeChooserFragment_to_gameLogicalFragment
+            IntelligenceType.VISUAL -> R.id.action_intelligenceTypeChooserFragment_to_gameVisualFragment
+            IntelligenceType.MUSICAL -> R.id.action_intelligenceTypeChooserFragment_to_gameMusicalFragment
+            IntelligenceType.VISUAL_HARD -> R.id.action_intelligenceTypeChooserFragment_to_gameVisualFragment
+            else -> throw IllegalStateException("Recommended intelligence type is illegal")
         }
     }
 
@@ -100,6 +113,26 @@ class IntelligenceTypeGVAdapter(
                     "wordTheme" to wordTheme,
                     "blurType" to BlurType.BLUR
                 )
+            }
+            IntelligenceType.RECOMMENDED_LEARNING -> {
+                if (recommendedLearningIntelligenceType == IntelligenceType.VISUAL) {
+                    bundleOf(
+                        "intelligenceType" to enum[position],
+                        "wordTheme" to wordTheme,
+                        "blurType" to BlurType.NONE
+                    )
+                } else if (recommendedLearningIntelligenceType == IntelligenceType.VISUAL_HARD) {
+                    bundleOf(
+                        "intelligenceType" to enum[position],
+                        "wordTheme" to wordTheme,
+                        "blurType" to BlurType.BLUR
+                    )
+                } else {
+                    bundleOf(
+                        "wordTheme" to wordTheme,
+                        "intelligenceType" to enum[position]
+                    )
+                }
             }
             else -> {
                 bundleOf(

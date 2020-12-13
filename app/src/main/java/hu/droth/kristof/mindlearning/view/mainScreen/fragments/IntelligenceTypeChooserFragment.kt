@@ -9,15 +9,17 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.mindlearning.util.getStringResource
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.EntryPoint
+import dagger.hilt.android.AndroidEntryPoint
 import hu.droth.kristof.mindlearning.R
 import hu.droth.kristof.mindlearning.databinding.IntelligenceTypeChooserFragmentBinding
 import hu.droth.kristof.mindlearning.model.IntelligenceType
+import hu.droth.kristof.mindlearning.util.getStringResource
 import hu.droth.kristof.mindlearning.view.mainScreen.adapters.IntelligenceTypeGVAdapter
 import hu.droth.kristof.mindlearning.view.mainScreen.viewModels.IntelligenceTypeChooserViewModel
 import kotlinx.android.synthetic.main.intelligence_type_chooser_fragment.*
-
+@AndroidEntryPoint
 class IntelligenceTypeChooserFragment : Fragment() {
 
 
@@ -48,7 +50,9 @@ class IntelligenceTypeChooserFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         setWordTheme()
-        setGridView()
+        viewModel.recommendedLearningType.observe(viewLifecycleOwner,{
+            setGridView(it)
+        })
     }
 
     override fun onStart() {
@@ -58,13 +62,14 @@ class IntelligenceTypeChooserFragment : Fragment() {
         navBar?.visibility = View.VISIBLE
     }
 
-    private fun setGridView() {
+    private fun setGridView(recommendedLearningIntelligenceType: IntelligenceType) {
         val enum = enumValues<IntelligenceType>().asList()
         val gridViewAdapter = IntelligenceTypeGVAdapter(
             context = requireContext(),
             navController = findNavController(),
             wordTheme = args.wordThemeType,
-            enum = enum
+            enum = enum,
+            recommendedLearningIntelligenceType = recommendedLearningIntelligenceType
         )
         gvIntelligenceTypeSelector.adapter = gridViewAdapter
 

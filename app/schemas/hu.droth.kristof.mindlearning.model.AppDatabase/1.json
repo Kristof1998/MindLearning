@@ -1,0 +1,569 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "9c814a18545b982becc11ff3afa1ac8d",
+    "entities": [
+      {
+        "tableName": "fills",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`fillId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `playerId` INTEGER NOT NULL, `wordId` INTEGER NOT NULL, `fillTime` INTEGER NOT NULL, `correct` INTEGER NOT NULL, `sessionId` INTEGER NOT NULL, `intelligenceType` TEXT NOT NULL, `languageType` TEXT NOT NULL, `wordTheme` TEXT NOT NULL, `lastWordId` INTEGER, `session` INTEGER NOT NULL, `progress` INTEGER NOT NULL, `inProgress` INTEGER NOT NULL, `lastModified` INTEGER NOT NULL, `session_player_id` INTEGER NOT NULL, FOREIGN KEY(`playerId`) REFERENCES `players`(`playerId`) ON UPDATE CASCADE ON DELETE CASCADE , FOREIGN KEY(`wordId`) REFERENCES `words`(`wordId`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "fillId",
+            "columnName": "fillId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "playerId",
+            "columnName": "playerId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wordId",
+            "columnName": "wordId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fillTime",
+            "columnName": "fillTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "correct",
+            "columnName": "correct",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "session.sessionId",
+            "columnName": "sessionId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "session.intelligenceType",
+            "columnName": "intelligenceType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "session.languageType",
+            "columnName": "languageType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "session.wordTheme",
+            "columnName": "wordTheme",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "session.lastWordId",
+            "columnName": "lastWordId",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "session.session",
+            "columnName": "session",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "session.progress",
+            "columnName": "progress",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "session.inProgress",
+            "columnName": "inProgress",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "session.lastModified",
+            "columnName": "lastModified",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "session.playerId",
+            "columnName": "session_player_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "fillId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_fills_playerId",
+            "unique": false,
+            "columnNames": [
+              "playerId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_fills_playerId` ON `${TABLE_NAME}` (`playerId`)"
+          },
+          {
+            "name": "index_fills_wordId",
+            "unique": false,
+            "columnNames": [
+              "wordId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_fills_wordId` ON `${TABLE_NAME}` (`wordId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "players",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "playerId"
+            ],
+            "referencedColumns": [
+              "playerId"
+            ]
+          },
+          {
+            "table": "words",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "wordId"
+            ],
+            "referencedColumns": [
+              "wordId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "meanings",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`meaningId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `wordId` INTEGER NOT NULL, `languageType` TEXT NOT NULL, `writing` TEXT NOT NULL, `wordSize` INTEGER NOT NULL, `vowelSize` INTEGER NOT NULL, `consonantSize` INTEGER NOT NULL, `syllable` INTEGER NOT NULL, FOREIGN KEY(`wordId`) REFERENCES `words`(`wordId`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "meaningId",
+            "columnName": "meaningId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wordId",
+            "columnName": "wordId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languageType",
+            "columnName": "languageType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "writing",
+            "columnName": "writing",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wordSize",
+            "columnName": "wordSize",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vowelSize",
+            "columnName": "vowelSize",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "consonantSize",
+            "columnName": "consonantSize",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syllable",
+            "columnName": "syllable",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "meaningId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_meanings_wordId",
+            "unique": false,
+            "columnNames": [
+              "wordId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_meanings_wordId` ON `${TABLE_NAME}` (`wordId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "words",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "wordId"
+            ],
+            "referencedColumns": [
+              "wordId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "players",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`playerId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `gender` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "playerId",
+            "columnName": "playerId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gender",
+            "columnName": "gender",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "playerId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "sessions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`sessionId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `intelligenceType` TEXT NOT NULL, `languageType` TEXT NOT NULL, `wordTheme` TEXT NOT NULL, `lastWordId` INTEGER, `session` INTEGER NOT NULL, `progress` INTEGER NOT NULL, `inProgress` INTEGER NOT NULL, `lastModified` INTEGER NOT NULL, `session_player_id` INTEGER NOT NULL, FOREIGN KEY(`lastWordId`) REFERENCES `words`(`wordId`) ON UPDATE CASCADE ON DELETE SET DEFAULT )",
+        "fields": [
+          {
+            "fieldPath": "sessionId",
+            "columnName": "sessionId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "intelligenceType",
+            "columnName": "intelligenceType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languageType",
+            "columnName": "languageType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wordTheme",
+            "columnName": "wordTheme",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastWordId",
+            "columnName": "lastWordId",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "session",
+            "columnName": "session",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "progress",
+            "columnName": "progress",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "inProgress",
+            "columnName": "inProgress",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastModified",
+            "columnName": "lastModified",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "playerId",
+            "columnName": "session_player_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "sessionId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_sessions_lastWordId",
+            "unique": false,
+            "columnNames": [
+              "lastWordId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_sessions_lastWordId` ON `${TABLE_NAME}` (`lastWordId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "words",
+            "onDelete": "SET DEFAULT",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "lastWordId"
+            ],
+            "referencedColumns": [
+              "wordId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "statistics",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`statisticId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `playerId` INTEGER NOT NULL, FOREIGN KEY(`playerId`) REFERENCES `players`(`playerId`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "statisticId",
+            "columnName": "statisticId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "playerId",
+            "columnName": "playerId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "statisticId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_statistics_playerId",
+            "unique": false,
+            "columnNames": [
+              "playerId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_statistics_playerId` ON `${TABLE_NAME}` (`playerId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "players",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "playerId"
+            ],
+            "referencedColumns": [
+              "playerId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "words",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`wordId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `lastUpdateTime` INTEGER NOT NULL, `theme` TEXT NOT NULL, `imageUrl` TEXT, `blurImageUrl` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "wordId",
+            "columnName": "wordId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastUpdateTime",
+            "columnName": "lastUpdateTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "theme",
+            "columnName": "theme",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "blurImageUrl",
+            "columnName": "blurImageUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "wordId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "known_words",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`knownWordId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `wordId` INTEGER NOT NULL, `playerId` INTEGER NOT NULL, FOREIGN KEY(`playerId`) REFERENCES `players`(`playerId`) ON UPDATE CASCADE ON DELETE CASCADE , FOREIGN KEY(`wordId`) REFERENCES `words`(`wordId`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "knownWordId",
+            "columnName": "knownWordId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wordId",
+            "columnName": "wordId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "playerId",
+            "columnName": "playerId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "knownWordId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_known_words_wordId",
+            "unique": false,
+            "columnNames": [
+              "wordId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_known_words_wordId` ON `${TABLE_NAME}` (`wordId`)"
+          },
+          {
+            "name": "index_known_words_playerId",
+            "unique": false,
+            "columnNames": [
+              "playerId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_known_words_playerId` ON `${TABLE_NAME}` (`playerId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "players",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "playerId"
+            ],
+            "referencedColumns": [
+              "playerId"
+            ]
+          },
+          {
+            "table": "words",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "wordId"
+            ],
+            "referencedColumns": [
+              "wordId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "Language",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`languageId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `shortName` TEXT NOT NULL, `flagPath` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "languageId",
+            "columnName": "languageId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shortName",
+            "columnName": "shortName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "flagPath",
+            "columnName": "flagPath",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "languageId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9c814a18545b982becc11ff3afa1ac8d')"
+    ]
+  }
+}

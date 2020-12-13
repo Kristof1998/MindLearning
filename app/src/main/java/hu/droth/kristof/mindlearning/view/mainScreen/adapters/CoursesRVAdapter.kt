@@ -7,11 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.mindlearning.util.getStringResource
-import com.example.mindlearning.view.mainScreen.fragments.CourseFragmentDirections
 import hu.droth.kristof.mindlearning.R
 import hu.droth.kristof.mindlearning.model.WordTheme
 import hu.droth.kristof.mindlearning.util.getStringResource
+import hu.droth.kristof.mindlearning.view.mainScreen.fragments.CourseFragmentDirections
 
 class CoursesRVAdapter(
     private val context: Context

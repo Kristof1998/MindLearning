@@ -8,11 +8,11 @@
 
         <import type="android.view.View" />
 
-        <import type="hu.droth.kristof.mindlearning.mindlearning.model.entity.Player" />
+        <import type="hu.droth.kristof.mindlearning.model.entity.Player" />
 
         <variable
             name="mainViewModel"
-            type="hu.droth.kristof.mindlearning.mindlearning.view.mainScreen.viewModels.MainFragmentViewModel" />
+            type="hu.droth.kristof.mindlearning.view.mainScreen.viewModels.MainFragmentViewModel" />
     </data>
 
     <ScrollView

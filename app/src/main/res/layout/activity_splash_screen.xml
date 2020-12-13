@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="hu.droth.kristof.mindlearning.mindlearning.view.splashScreen.SplashScreenViewModel" />
+            type="hu.droth.kristof.mindlearning.view.splashScreen.SplashScreenViewModel" />
 
     </data>
 

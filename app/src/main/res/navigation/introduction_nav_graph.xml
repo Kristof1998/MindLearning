@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/learnFasterFragment"
-        android:name="com.example.mindlearning.view.introduction.fragments.LearnFasterFragmentIntroduction"
+        android:name="hu.droth.kristof.mindlearning.view.introduction.fragments.LearnFasterFragmentIntroduction"
         android:label="LearnFasterFragment">
         <action
             android:id="@+id/action_learnFasterFragment_to_useScienceFragment"
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/visualizeFragment"
-        android:name="com.example.mindlearning.view.introduction.fragments.VisualizeFragmentIntroduction"
+        android:name="hu.droth.kristof.mindlearning.view.introduction.fragments.VisualizeFragmentIntroduction"
         android:label="VisualizeFragment" />
 
 

@@ -65,7 +65,7 @@
         android:label="IntelligenceTypeChooserFragment">
         <argument
             android:name="wordThemeType"
-            app:argType="hu.droth.kristof.mindlearning.mindlearning.model.WordTheme" />
+            app:argType="hu.droth.kristof.mindlearning.model.WordTheme" />
         <action
             android:id="@+id/action_intelligenceTypeChooserFragment_to_gameTestFragment"
             app:destination="@id/gameTestFragment" />
@@ -89,7 +89,7 @@
         tools:layout="@layout/game_test_fragment">
         <argument
             android:name="wordTheme"
-            app:argType="hu.droth.kristof.mindlearning.mindlearning.model.WordTheme" />
+            app:argType="hu.droth.kristof.mindlearning.model.WordTheme" />
     </fragment>
     <fragment
         android:id="@+id/gameLogicalFragment"

@@ -7,11 +7,11 @@
 
         <import type="android.view.View" />
 
-        <import type="hu.droth.kristof.mindlearning.mindlearning.model.entity.Player" />
+        <import type="hu.droth.kristof.mindlearning.model.entity.Player" />
 
         <variable
             name="viewModel"
-            type="hu.droth.kristof.mindlearning.mindlearning.view.mainScreen.viewModels.ProfileFragmentViewModel" />
+            type="hu.droth.kristof.mindlearning.view.mainScreen.viewModels.ProfileFragmentViewModel" />
 
     </data>
 

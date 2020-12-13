@@ -37,6 +37,7 @@ fun IntelligenceType.getStringResource(): Int {
         IntelligenceType.MUSICAL -> R.string.musical
         IntelligenceType.VISUAL_HARD -> R.string.visual_hard
         IntelligenceType.TEST -> R.string.test
+        IntelligenceType.RECOMMENDED_LEARNING ->R.string.recommended_learning
     }
 }
 
@@ -55,6 +56,7 @@ fun IntelligenceType.getIconDrawable(): Int {
         IntelligenceType.MUSICAL -> R.drawable.ic_intelligence_musical
         IntelligenceType.VISUAL_HARD -> R.drawable.ic_intelligence_visual
         IntelligenceType.TEST -> R.drawable.ic_intelligence_test
+        IntelligenceType.RECOMMENDED_LEARNING -> R.drawable.ic_recommend_icon
     }
 }
 
