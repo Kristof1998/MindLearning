@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="hu.droth.kristof.mindlearning.mindlearning.model.entity.Player" />
+
+        <variable
+            name="viewModel"
+            type="hu.droth.kristof.mindlearning.mindlearning.view.mainScreen.viewModels.ProfileFragmentViewModel" />
+
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:fillViewport="true"
+        android:theme="@style/profileFragmentStyle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/horizontalPadding"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"
+            tools:context=".view.mainScreen.fragments.ProfileFragment">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@{`Hello ` + viewModel.currentPlayer.name}"
+                android:textColor="@color/whiteColor"
+                android:maxLines="3"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toStartOf="@+id/btnSelectAccount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnSelectAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_next_selector"
+                android:paddingHorizontal="20dp"
+                android:text="@string/select_account"
+                android:textColor="@color/darkTextColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/learning_ability"
+                android:textColor="@color/whiteColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/whiteColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChartWordTheme"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintDimensionRatio="h,1:1.3"
+                app:layout_constraintEnd_toStartOf="@+id/pieChartIntelligenceType"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:background="@color/whiteColor"
+                app:layout_constraintBottom_toBottomOf="@+id/pieChartWordTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/pieChartWordTheme" />
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChartIntelligenceType"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintDimensionRatio="h,1:1.3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/pieChartWordTheme"
+                app:layout_constraintTop_toTopOf="@+id/pieChartWordTheme" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/learning_progress"
+                android:textColor="@color/whiteColor"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/whiteColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProfileCurrentProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxHeight="300dp"
+                app:layout_constraintHeight_percent="0.4"
+                app:layout_constraintTop_toBottomOf="@+id/view3"
+                tools:layout_editor_absoluteX="30dp" />
+
+            <Button
+                android:id="@+id/btnExportStatistic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/export_statistic"
+                android:background="@drawable/rounded_button_next_selector"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/darkTextColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvProfileCurrentProgress" />
+
+            <ProgressBar
+                android:id="@+id/progressBarProfileFragment"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/whiteColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.AppCompat.ProgressBar"
+                android:visibility="@{viewModel.shouldShowProgressBar ? View.VISIBLE :View.GONE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="pieChartWordTheme,pieChartIntelligenceType"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="863dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</layout>

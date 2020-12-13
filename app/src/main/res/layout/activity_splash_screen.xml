@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="hu.droth.kristof.mindlearning.mindlearning.view.splashScreen.SplashScreenViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/motionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_splash_screen"
+        android:paddingHorizontal="@dimen/horizontalPadding"
+        android:paddingBottom="@dimen/splashScreenBottomPadding"
+        tools:showPaths="true">
+
+        <ImageView
+            android:id="@+id/ivApplicationIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/transparentColor"
+            android:src="@drawable/brain_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.3"
+            android:contentDescription="@string/application_icon" />
+
+        <TextView
+            android:id="@+id/tvApplicationName"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/transparentColor"
+            android:fontFamily="@font/black_chancery"
+            android:text="@string/mindlearning"
+            android:maxLines="1"
+            android:autoSizeTextType="uniform"
+            android:textAlignment="center"
+            android:textColor="@color/whiteColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivApplicationIcon"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/tvTapToContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentColor"
+            android:text="@string/tap_to_continue"
+            android:visibility="@{viewModel.shouldShowTapToContinue ? View.VISIBLE :View.GONE}"
+            android:textColor="@color/whiteSemiTransparentColor"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpUsage" />
+
+        <ProgressBar
+            android:id="@+id/progressBarGameVisual"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/whiteColor"
+            android:visibility="@{viewModel.shouldShowProgressBarWithText ? View.VISIBLE :View.GONE}"
+            app:layout_constraintBottom_toTopOf="@+id/progressBarTextGameVisual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/progressBarTextGameVisual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.progressBarText}"
+            android:textColor="@color/whiteColor"
+            android:visibility="@{viewModel.shouldShowProgressBarWithText ? View.VISIBLE :View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

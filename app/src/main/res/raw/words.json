@@ -1,0 +1,1304 @@
+[
+  {
+    "meanings": {
+      "ENGLISH": "reptile",
+      "HUNGARIAN": "hüllő"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "fish",
+      "HUNGARIAN": "hal"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "peacock",
+      "HUNGARIAN": "páva"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "eagle",
+      "HUNGARIAN": "sas"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "koala",
+      "HUNGARIAN": "koala"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "giraffe",
+      "HUNGARIAN": "zsiráf"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "ostrich",
+      "HUNGARIAN": "strucc"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "gorilla",
+      "HUNGARIAN": "gorilla"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "salmon",
+      "HUNGARIAN": "lazac"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "falcon",
+      "HUNGARIAN": "sólyom"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "okapi",
+      "HUNGARIAN": "okapi"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "gull",
+      "HUNGARIAN": "sirály"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "agouti",
+      "HUNGARIAN": "agouti"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "gnat",
+      "HUNGARIAN": "szúnyog"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "herring",
+      "HUNGARIAN": "hering"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "heron",
+      "HUNGARIAN": "gém"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "kiwi",
+      "HUNGARIAN": "kiwi"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "crow",
+      "HUNGARIAN": "varjú"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "duck",
+      "HUNGARIAN": "kacsa"
+    },
+    "wordTheme": "ANIMAL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "scale",
+      "HUNGARIAN": "skála"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "color",
+      "HUNGARIAN": "szín"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "stencil",
+      "HUNGARIAN": "stencil"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "ruler",
+      "HUNGARIAN": "vonalzó"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "chisel",
+      "HUNGARIAN": "véső"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "gallery",
+      "HUNGARIAN": "Képtár"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "etching",
+      "HUNGARIAN": "rézkarc"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "carve",
+      "HUNGARIAN": "farag"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "tube",
+      "HUNGARIAN": "cső"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "vellum",
+      "HUNGARIAN": "vellum"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "shade",
+      "HUNGARIAN": "árnyék"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "poster",
+      "HUNGARIAN": "poszter"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "media",
+      "HUNGARIAN": "média"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "pigment",
+      "HUNGARIAN": "pigment"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "style",
+      "HUNGARIAN": "stílus"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "film",
+      "HUNGARIAN": "film"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "photo",
+      "HUNGARIAN": "fénykép"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "brush",
+      "HUNGARIAN": "kefe"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "gouache",
+      "HUNGARIAN": "gouache"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "pencil",
+      "HUNGARIAN": "ceruza"
+    },
+    "wordTheme": "ART"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "indigo",
+      "HUNGARIAN": "indigó"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "grey",
+      "HUNGARIAN": "szürke"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "beige",
+      "HUNGARIAN": "bézs"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "sienna",
+      "HUNGARIAN": "sienna"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "sepia",
+      "HUNGARIAN": "szépia"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "dark",
+      "HUNGARIAN": "sötét"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "bronze",
+      "HUNGARIAN": "bronz"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "color",
+      "HUNGARIAN": "szín"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "red",
+      "HUNGARIAN": "piros"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "yellow",
+      "HUNGARIAN": "sárga"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "gold",
+      "HUNGARIAN": "arany"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "gray",
+      "HUNGARIAN": "szürke"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "pale",
+      "HUNGARIAN": "sápadt"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "silver",
+      "HUNGARIAN": "ezüst"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "black",
+      "HUNGARIAN": "fekete"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "blue",
+      "HUNGARIAN": "kék"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "cyan",
+      "HUNGARIAN": "cián"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "brown",
+      "HUNGARIAN": "barna"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "rust",
+      "HUNGARIAN": "rozsda"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "aqua",
+      "HUNGARIAN": "aqua"
+    },
+    "wordTheme": "COLOR"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "garment",
+      "HUNGARIAN": "ruha"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "hoodie",
+      "HUNGARIAN": "kapucni"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "t-shirt",
+      "HUNGARIAN": "póló"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "skirt",
+      "HUNGARIAN": "szoknya"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "helmet",
+      "HUNGARIAN": "sisak"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "shoe",
+      "HUNGARIAN": "cipő"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "jeans",
+      "HUNGARIAN": "farmer"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "zipper",
+      "HUNGARIAN": "cipzár"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "kimono",
+      "HUNGARIAN": "kimonó"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "sock",
+      "HUNGARIAN": "zokni"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "gloves",
+      "HUNGARIAN": "kesztyű"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "sweater",
+      "HUNGARIAN": "pulóver"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "blazer",
+      "HUNGARIAN": "blézer"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "pants",
+      "HUNGARIAN": "nadrág"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "sandals",
+      "HUNGARIAN": "szandál"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "jacket",
+      "HUNGARIAN": "dzseki"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "suit",
+      "HUNGARIAN": "öltöny"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "tiara",
+      "HUNGARIAN": "tiara"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "cloak",
+      "HUNGARIAN": "köpeny"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "pajamas",
+      "HUNGARIAN": "pizsama"
+    },
+    "wordTheme": "CLOTHING"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "parent",
+      "HUNGARIAN": "szülő"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "dad",
+      "HUNGARIAN": "apa"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "husband",
+      "HUNGARIAN": "férj"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "aunt",
+      "HUNGARIAN": "néni"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "family",
+      "HUNGARIAN": "család"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "father",
+      "HUNGARIAN": "apa"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "mother",
+      "HUNGARIAN": "anya"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "sibling",
+      "HUNGARIAN": "testvér"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "heir",
+      "HUNGARIAN": "örökös"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "papa",
+      "HUNGARIAN": "papa"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "child",
+      "HUNGARIAN": "gyermek"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "mate",
+      "HUNGARIAN": "társ"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "twins",
+      "HUNGARIAN": "Ikrek"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "son",
+      "HUNGARIAN": "fiú"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "mom",
+      "HUNGARIAN": "anya"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "sister",
+      "HUNGARIAN": "nővér"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "wife",
+      "HUNGARIAN": "feleség"
+    },
+    "wordTheme": "FAMILY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "nerve",
+      "HUNGARIAN": "ideg"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "brain",
+      "HUNGARIAN": "agy"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "tongue",
+      "HUNGARIAN": "nyelv"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "knee",
+      "HUNGARIAN": "térd"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "skull",
+      "HUNGARIAN": "koponya"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "waist",
+      "HUNGARIAN": "derék"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "skin",
+      "HUNGARIAN": "bőr"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "liver",
+      "HUNGARIAN": "máj"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "leg",
+      "HUNGARIAN": "láb"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "organ",
+      "HUNGARIAN": "szerv"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "teeth",
+      "HUNGARIAN": "fogak"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "senses",
+      "HUNGARIAN": "érzékek"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "back",
+      "HUNGARIAN": "hát"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "hip",
+      "HUNGARIAN": "csípő"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "chest",
+      "HUNGARIAN": "mellkas"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "ear",
+      "HUNGARIAN": "fül"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "pore",
+      "HUNGARIAN": "pórus"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "uvula",
+      "HUNGARIAN": "nyelvcsap"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "wrist",
+      "HUNGARIAN": "csukló"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "finger",
+      "HUNGARIAN": "ujj"
+    },
+    "wordTheme": "HUMAN_BODY"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "rancher",
+      "HUNGARIAN": "farmer"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "driver",
+      "HUNGARIAN": "sofőr"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "diver",
+      "HUNGARIAN": "búvár"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "private",
+      "HUNGARIAN": "magán"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "dancer",
+      "HUNGARIAN": "táncos"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "doctor",
+      "HUNGARIAN": "orvos"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "banker",
+      "HUNGARIAN": "bankár"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "farmer",
+      "HUNGARIAN": "gazda"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "sheriff",
+      "HUNGARIAN": "seriff"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "surgeon",
+      "HUNGARIAN": "sebész"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "cook",
+      "HUNGARIAN": "szakács"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "writer",
+      "HUNGARIAN": "író"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "nun",
+      "HUNGARIAN": "apáca"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "swimmer",
+      "HUNGARIAN": "úszó"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "janitor",
+      "HUNGARIAN": "gondnok"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "valet",
+      "HUNGARIAN": "inas"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "chef",
+      "HUNGARIAN": "séf"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "judge",
+      "HUNGARIAN": "bíró"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "notary",
+      "HUNGARIAN": "jegyző"
+    },
+    "wordTheme": "JOB"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "bugle",
+      "HUNGARIAN": "kürt"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "violin",
+      "HUNGARIAN": "hegedű"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "harp",
+      "HUNGARIAN": "hárfa"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "organ",
+      "HUNGARIAN": "orgona"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "gong",
+      "HUNGARIAN": "gong"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "flute",
+      "HUNGARIAN": "fuvola"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "lute",
+      "HUNGARIAN": "lant"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "banjo",
+      "HUNGARIAN": "bendzsó"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "drums",
+      "HUNGARIAN": "dobok"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "tuba",
+      "HUNGARIAN": "tuba"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "oboe",
+      "HUNGARIAN": "oboa"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "viola",
+      "HUNGARIAN": "brácsa"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "bassoon",
+      "HUNGARIAN": "fagott"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "piano",
+      "HUNGARIAN": "zongora"
+    },
+    "wordTheme": "MUSIC"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "desk",
+      "HUNGARIAN": "asztal"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "map",
+      "HUNGARIAN": "térkép"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "student",
+      "HUNGARIAN": "diák"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "smart",
+      "HUNGARIAN": "okos"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "quiz",
+      "HUNGARIAN": "kvíz"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "atlas",
+      "HUNGARIAN": "atlasz"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "paste",
+      "HUNGARIAN": "paszta"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "learn",
+      "HUNGARIAN": "tanul"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "laptop",
+      "HUNGARIAN": "laptop"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "think",
+      "HUNGARIAN": "gondol"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "reading",
+      "HUNGARIAN": "olvasás"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "teacher",
+      "HUNGARIAN": "tanár"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "project",
+      "HUNGARIAN": "projekt"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "pencil",
+      "HUNGARIAN": "ceruza"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "eraser",
+      "HUNGARIAN": "radír"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "exam",
+      "HUNGARIAN": "vizsga"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "chalk",
+      "HUNGARIAN": "kréta"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "ruler",
+      "HUNGARIAN": "vonalzó"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "lunch",
+      "HUNGARIAN": "ebéd"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "english",
+      "HUNGARIAN": "angol"
+    },
+    "wordTheme": "SCHOOL"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "wind",
+      "HUNGARIAN": "szél"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "fog",
+      "HUNGARIAN": "köd"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "cyclone",
+      "HUNGARIAN": "ciklon"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "sky",
+      "HUNGARIAN": "ég"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "smoke",
+      "HUNGARIAN": "füst"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "ozone",
+      "HUNGARIAN": "ózon"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "flash",
+      "HUNGARIAN": "villám"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "water",
+      "HUNGARIAN": "víz"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "drought",
+      "HUNGARIAN": "aszály"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "air",
+      "HUNGARIAN": "levegő"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "cloudy",
+      "HUNGARIAN": "felhős"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "storm",
+      "HUNGARIAN": "vihar"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "chill",
+      "HUNGARIAN": "hideg"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "smog",
+      "HUNGARIAN": "szmog"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "watch",
+      "HUNGARIAN": "néz"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "rain",
+      "HUNGARIAN": "eső"
+    },
+    "wordTheme": "WEATHER"
+  },
+  {
+    "meanings": {
+      "ENGLISH": "cloud",
+      "HUNGARIAN": "felhő"
+    },
+    "wordTheme": "WEATHER"
+  }
+]

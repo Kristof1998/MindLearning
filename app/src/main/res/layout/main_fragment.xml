@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.mainScreen.fragments.MainFragment">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="hu.droth.kristof.mindlearning.mindlearning.model.entity.Player" />
+
+        <variable
+            name="mainViewModel"
+            type="hu.droth.kristof.mindlearning.mindlearning.view.mainScreen.viewModels.MainFragmentViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundColor"
+            android:paddingHorizontal="@dimen/horizontalPadding"
+            android:paddingVertical="30dp"
+            android:theme="@style/introductionStyle">
+
+            <TextView
+                android:id="@+id/tvHello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@{`Hello ` + mainViewModel.currentPlayer.name}"
+                android:textSize="40sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whiteColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/in_progress_courses"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHello" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/inProgressRecycleView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <ProgressBar
+                android:id="@+id/progressBarGameVisual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.AppCompat.ProgressBar"
+                android:visibility="@{mainViewModel.shouldShowProgressBarWithText ? View.VISIBLE :View.GONE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHello" />
+
+            <TextView
+                android:id="@+id/progressBarTextGameVisual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{mainViewModel.progressBarText}"
+                android:visibility="@{mainViewModel.shouldShowProgressBarWithText ? View.VISIBLE :View.GONE}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progressBarGameVisual" />
+
+            <ImageView
+                android:id="@+id/ivEmptyRecycleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/empty_in_progress_list_image"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_icon_empty_recycle_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintWidth_percent="0.7" />
+
+            <TextView
+                android:id="@+id/tvRecycleViewEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="@string/looks_like_it_s_empty_start_course_now"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivEmptyRecycleView" />
+
+            <Button
+                android:id="@+id/btnStartCourse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_button_next_enabled"
+                android:text="@string/start_course"
+                android:textColor="@color/darkTextColor"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRecycleViewEmpty"
+                app:layout_constraintWidth_percent="0.6" />
+
+            <Button
+                android:id="@+id/btnEasterEgg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/transparentColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/bgEasterEgg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_button_next_enabled"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivEasterEgg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_next_enabled"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/chameleon_image"
+                android:src="@drawable/ic_chameleon"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEasterEgg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/congratulation_you_found_patrik"
+                android:textAlignment="center"
+                android:textColor="@color/darkTextColor"
+                android:textSize="40sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivEasterEgg" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

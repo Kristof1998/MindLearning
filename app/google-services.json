@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "540338245341",
+    "project_id": "mindlearning-c7b9d",
+    "storage_bucket": "mindlearning-c7b9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540338245341:android:e1a642deb546162b12d534",
+        "android_client_info": {
+          "package_name": "com.example.mindlearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540338245341-m3eiroim5bc1bdhm4cfu1cukc861av91.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9245NDZ1I07lVie2AzK4CS8PRO9jVjzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540338245341-m3eiroim5bc1bdhm4cfu1cukc861av91.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540338245341:android:f800aed559f7f8da12d534",
+        "android_client_info": {
+          "package_name": "hu.droth.kristof.mindlearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540338245341-m3eiroim5bc1bdhm4cfu1cukc861av91.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9245NDZ1I07lVie2AzK4CS8PRO9jVjzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540338245341-m3eiroim5bc1bdhm4cfu1cukc861av91.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

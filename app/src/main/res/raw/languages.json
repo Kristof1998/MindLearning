@@ -1,0 +1,14 @@
+[
+  {
+    "flagPath": "/flags/HUN",
+    "languageId": 0,
+    "name": "HUNGARIAN",
+    "shortName": "HUN"
+  },
+  {
+    "flagPath": "/flags/ENG",
+    "languageId": 0,
+    "name": "ENGLISH",
+    "shortName": "ENG"
+  }
+]

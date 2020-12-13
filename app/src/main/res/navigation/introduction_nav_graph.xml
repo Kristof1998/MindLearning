@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/learnFasterFragment">
+
+    <fragment
+        android:id="@+id/learnFasterFragment"
+        android:name="com.example.mindlearning.view.introduction.fragments.LearnFasterFragmentIntroduction"
+        android:label="LearnFasterFragment">
+        <action
+            android:id="@+id/action_learnFasterFragment_to_useScienceFragment"
+            app:destination="@id/useScienceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/useScienceFragment"
+        android:name="com.example.mindlearning.view.introduction.fragments.UseScienceFragmentIntroduction"
+        android:label="UseScienceFragment">
+        <action
+            android:id="@+id/action_useScienceFragment_to_visualizeFragment"
+            app:destination="@id/visualizeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/visualizeFragment"
+        android:name="com.example.mindlearning.view.introduction.fragments.VisualizeFragmentIntroduction"
+        android:label="VisualizeFragment" />
+
+
+</navigation>

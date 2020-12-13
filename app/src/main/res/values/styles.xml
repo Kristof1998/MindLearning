@@ -1,0 +1,59 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/darkTextColor</item>
+        <item name="snackbarStyle">@style/Widget.MaterialComponents.Snackbar</item>
+    </style>
+
+    <style name="introductionStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textColorPrimary">@color/whiteColor</item>
+        <item name="fontFamily">@font/segoe_ui</item>
+        <item name="colorControlNormal">@color/whiteColor</item>
+        <item name="colorControlActivated">@color/whiteColor</item>
+        <item name="colorControlHighlight">@color/whiteColor</item>
+    </style>
+
+    <style name="profileFragmentStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/segoe_ui</item>
+        <item name="colorAccent">@color/darkTextColor</item>
+    </style>
+
+    <style name="currentProgressCardStyle" parent="AppTheme">
+        <item name="android:textColor">@color/darkTextColor</item>
+    </style>
+
+    <style name="mainActivityStyle" parent="AppTheme">
+        <item name="colorControlNormal">@color/whiteColor</item>
+        <item name="colorControlActivated">@color/whiteColor</item>
+        <item name="colorControlHighlight">@color/whiteColor</item>
+
+    </style>
+
+    <style name="BorderTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/whiteColor</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="boxStrokeColor">@color/edit_text_box_border</item>
+    </style>
+
+    <style name="SettingsAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/darkTextColor</item>
+        <item name="colorControlActivated">@color/whiteColor</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/segoe_ui</item>
+        <item name="colorAccent">@color/darkTextColor</item>
+    </style>
+
+
+    <style name="BorderEdiTextStyle" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:padding="30dp"
+        tools:context=".view.game.learning.fragments.GameVerbalFragment">
+
+        <include
+            android:id="@+id/gameTopBar"
+            layout="@layout/game_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/ownWordAndSolutionData"
+            layout="@layout/card_word_with_flag_solution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameTopBar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clWordDataHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_card_view_background"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ownWordAndSolutionData">
+
+
+            <TextView
+                android:id="@+id/tvLetters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/letters"
+                android:textColor="@color/darkTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvVowels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/vowels"
+                android:textColor="@color/darkTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLetters" />
+
+            <TextView
+                android:id="@+id/tvSyllable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/syllables"
+                android:textColor="@color/darkTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvVowels" />
+
+            <TextView
+                android:id="@+id/tvConsonant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/consonants"
+                android:textColor="@color/darkTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSyllable" />
+
+            <TextView
+                android:id="@+id/tvConsonantNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/darkTextColor"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvConsonant"
+                app:layout_constraintStart_toEndOf="@+id/tvConsonant"
+                app:layout_constraintTop_toTopOf="@+id/tvConsonant" />
+
+            <TextView
+                android:id="@+id/tvSyllableNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkTextColor"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSyllable"
+                app:layout_constraintStart_toStartOf="@+id/tvConsonantNumber"
+                app:layout_constraintTop_toTopOf="@+id/tvSyllable" />
+
+            <TextView
+                android:id="@+id/tvVowelNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkTextColor"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvVowels"
+                app:layout_constraintStart_toStartOf="@+id/tvSyllableNumber"
+                app:layout_constraintTop_toTopOf="@+id/tvVowels" />
+
+            <TextView
+                android:id="@+id/tvLetterNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkTextColor"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvLetters"
+                app:layout_constraintStart_toStartOf="@+id/tvVowelNumber"
+                app:layout_constraintTop_toTopOf="@+id/tvLetters" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button_next_enabled"
+            android:text="@string/get_help"
+            android:textAllCaps="false"
+            android:textColor="@color/darkTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clWordDataHolder" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/BorderTextInputLayoutStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:errorEnabled="false"
+            app:layout_constraintEnd_toStartOf="@+id/ivCheckAnswer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHelp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAnswerGame"
+                style="@style/BorderEdiTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whiteColor"
+                android:hint="@string/answer"
+                android:imeOptions="actionDone"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivCheckAnswer"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_checked"
+            android:contentDescription="@string/check_answer_button"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

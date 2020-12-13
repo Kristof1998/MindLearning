@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:padding="30dp"
+        tools:context=".view.game.learning.fragments.GameVerbalFragment">
+
+        <include
+            android:id="@+id/gameTopBar"
+            layout="@layout/game_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/ownWordAndSolutionData"
+            layout="@layout/card_word_with_flag_solution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameTopBar" />
+
+        <Button
+            android:id="@+id/btnPlayWordMusicalFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button_next_enabled"
+            android:drawableStart="@drawable/ic_button_play"
+            android:drawablePadding="10dp"
+            android:enabled="false"
+            android:minHeight="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:text="@string/play_word"
+            android:textAllCaps="false"
+            android:textColor="@color/darkTextColor"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ownWordAndSolutionData" />
+
+        <Button
+            android:id="@+id/btnPlaySyllableMusicalFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_next_enabled"
+            android:drawableStart="@drawable/ic_button_play"
+            android:drawablePadding="10dp"
+            android:minHeight="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:text="@string/play_syllable"
+            android:textAllCaps="false"
+            android:textColor="@color/darkTextColor"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPlayWordMusicalFragment" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/BorderTextInputLayoutStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:errorEnabled="false"
+            app:layout_constraintEnd_toStartOf="@+id/ivCheckAnswer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPlaySyllableMusicalFragment">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAnswerGame"
+                style="@style/BorderEdiTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whiteColor"
+                android:hint="@string/answer"
+                android:imeOptions="actionDone"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivCheckAnswer"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_checked"
+            android:contentDescription="@string/check_answer_button"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

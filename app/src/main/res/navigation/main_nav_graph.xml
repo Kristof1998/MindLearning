@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="hu.droth.kristof.mindlearning.view.mainScreen.fragments.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_courseFragment"
+            app:destination="@id/courseFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_gameMusicalFragment"
+            app:destination="@id/gameMusicalFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_gameLogicalFragment"
+            app:destination="@id/gameLogicalFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_gameVisualFragment"
+            app:destination="@id/gameVisualFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_gameVerbalFragment"
+            app:destination="@id/gameVerbalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="hu.droth.kristof.mindlearning.view.mainScreen.fragments.CourseFragment"
+        android:label="course_fragment"
+        tools:layout="@layout/course_fragment">
+        <action
+            android:id="@+id/action_courseFragment_to_intelligenceTypeChooserFragment"
+            app:destination="@id/intelligenceTypeChooserFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="hu.droth.kristof.mindlearning.view.mainScreen.fragments.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment">
+        <action
+            android:id="@+id/action_profileFragment_to_gameMusicalFragment"
+            app:destination="@id/gameMusicalFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_gameLogicalFragment"
+            app:destination="@id/gameLogicalFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_gameVisualFragment"
+            app:destination="@id/gameVisualFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_gameVerbalFragment"
+            app:destination="@id/gameVerbalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="hu.droth.kristof.mindlearning.view.mainScreen.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+
+    <fragment
+        android:id="@+id/intelligenceTypeChooserFragment"
+        android:name="hu.droth.kristof.mindlearning.view.mainScreen.fragments.IntelligenceTypeChooserFragment"
+        android:label="IntelligenceTypeChooserFragment">
+        <argument
+            android:name="wordThemeType"
+            app:argType="hu.droth.kristof.mindlearning.mindlearning.model.WordTheme" />
+        <action
+            android:id="@+id/action_intelligenceTypeChooserFragment_to_gameTestFragment"
+            app:destination="@id/gameTestFragment" />
+        <action
+            android:id="@+id/action_intelligenceTypeChooserFragment_to_gameMusicalFragment"
+            app:destination="@id/gameMusicalFragment" />
+        <action
+            android:id="@+id/action_intelligenceTypeChooserFragment_to_gameLogicalFragment"
+            app:destination="@id/gameLogicalFragment" />
+        <action
+            android:id="@+id/action_intelligenceTypeChooserFragment_to_gameVisualFragment"
+            app:destination="@id/gameVisualFragment" />
+        <action
+            android:id="@+id/action_intelligenceTypeChooserFragment_to_gameVerbalFragment"
+            app:destination="@id/gameVerbalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameTestFragment"
+        android:name="hu.droth.kristof.mindlearning.view.game.learning.fragments.GameTestFragment"
+        android:label="game_test_fragment"
+        tools:layout="@layout/game_test_fragment">
+        <argument
+            android:name="wordTheme"
+            app:argType="hu.droth.kristof.mindlearning.mindlearning.model.WordTheme" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameLogicalFragment"
+        android:name="hu.droth.kristof.mindlearning.view.game.learning.fragments.GameLogicalFragment"
+        android:label="game_logical_fragment"
+        tools:layout="@layout/game_logical_fragment">
+        <action
+            android:id="@+id/action_gameLogicalFragment_to_gameCheckingLogical"
+            app:destination="@id/gameCheckingLogical"
+            app:popUpTo="@id/gameLogicalFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameMusicalFragment"
+        android:name="hu.droth.kristof.mindlearning.view.game.learning.fragments.GameMusicalFragment"
+        android:label="game_musical_fragment"
+        tools:layout="@layout/game_musical_fragment">
+        <action
+            android:id="@+id/action_gameMusicalFragment_to_gameCheckingMusical"
+            app:destination="@id/gameCheckingMusical"
+            app:popUpTo="@id/gameMusicalFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameVerbalFragment"
+        android:name="hu.droth.kristof.mindlearning.view.game.learning.fragments.GameVerbalFragment"
+        android:label="game_verbal_fragment"
+        tools:layout="@layout/game_verbal_fragment">
+        <action
+            android:id="@+id/action_gameVerbalFragment_to_gameCheckingVerbal"
+            app:destination="@id/gameCheckingVerbal"
+            app:popUpTo="@id/gameVerbalFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameVisualFragment"
+        android:name="hu.droth.kristof.mindlearning.view.game.learning.fragments.GameVisualFragment"
+        android:label="game_visual_fragment"
+        tools:layout="@layout/game_visual_fragment">
+        <action
+            android:id="@+id/action_gameVisualFragment_to_gameCheckingVisual"
+            app:destination="@id/gameCheckingVisual"
+            app:popUpTo="@id/gameVisualFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameCheckingLogical"
+        android:name="hu.droth.kristof.mindlearning.view.game.checker.fragments.GameCheckingLogical"
+        android:label="game_checking_logical_fragment"
+        tools:layout="@layout/game_checking_logical_fragment" />
+    <fragment
+        android:id="@+id/gameCheckingMusical"
+        android:name="hu.droth.kristof.mindlearning.view.game.checker.fragments.GameCheckingMusical"
+        android:label="game_checking_musical_fragment"
+        tools:layout="@layout/game_checking_musical_fragment" />
+    <fragment
+        android:id="@+id/gameCheckingVisual"
+        android:name="hu.droth.kristof.mindlearning.view.game.checker.fragments.GameCheckingVisual"
+        android:label="game_checking_visual_fragment"
+        tools:layout="@layout/game_checking_visual_fragment" />
+    <fragment
+        android:id="@+id/gameCheckingVerbal"
+        android:name="hu.droth.kristof.mindlearning.view.game.checker.fragments.GameCheckingVerbal"
+        android:label="game_checking_verbal_fragment"
+        tools:layout="@layout/game_checking_verbal_fragment" />
+</navigation>

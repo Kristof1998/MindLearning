@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name" translatable="false">Mindlearning</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header" translatable="false">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="appearance">Appearance</string>
+    <string name="animal">Animal</string>
+    <string name="art">Art</string>
+    <string name="clothing">Clothing</string>
+    <string name="color">Color</string>
+    <string name="emotion">Emotion</string>
+    <string name="family">Family</string>
+    <string name="human_body">Human body</string>
+    <string name="job">Job</string>
+    <string name="music">Music</string>
+    <string name="school">School</string>
+    <string name="weather">Weather</string>
+    <string name="verbal">Verbal</string>
+    <string name="logical">Logical</string>
+    <string name="visual">Visual</string>
+    <string name="musical">Musical</string>
+    <string name="english">English</string>
+    <string name="hungarian">Hungarian</string>
+    <string name="test">Test</string>
+    <string name="visual_hard">Hard visual</string>
+    <string name="application_icon">Application icon</string>
+    <string name="mindlearning">Mindlearning</string>
+    <string name="tap_to_continue">Tap to continue</string>
+    <string name="theme">Theme</string>
+    <string name="type">Type</string>
+    <string name="progress">Progress</string>
+    <string name="intelligence_type_icon">Intelligence type icon</string>
+    <string name="flag_icon">Flag icon</string>
+    <string name="own_word_flag">Own word flag</string>
+    <string name="solution_word_flag">Solution word flag</string>
+    <string name="select_courses">Select courses</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender:</string>
+    <string name="create">Create</string>
+    <string name="export_settings">Export settings</string>
+    <string name="player_data">Player data</string>
+    <string name="word_data">Word data</string>
+    <string name="session_data">Session data</string>
+    <string name="fill_data">Fill data</string>
+    <string name="export">Export</string>
+    <string name="current_player">Current player</string>
+    <string name="all_player">All player</string>
+    <string name="selected_player">Selected player</string>
+    <string name="select_one_data_type_for_export">Select one data type for export</string>
+    <string name="create_account">Create account</string>
+    <string name="back_button">Back button</string>
+    <string name="skip">Skip</string>
+    <string name="explore_us">explore us</string>
+    <string name="introduction_image">Introduction image</string>
+    <string name="next">Next</string>
+    <string name="letters">Letters:</string>
+    <string name="vowels">Vowels:</string>
+    <string name="syllables">Syllables:</string>
+    <string name="consonants">Consonants:</string>
+    <string name="get_help">Get help</string>
+    <string name="answer">Answer</string>
+    <string name="check_answer_button">Check answer button</string>
+    <string name="play_word">Play word</string>
+    <string name="play_syllable">Play syllable</string>
+    <string name="learning_word_image">Learning word image</string>
+    <string name="previous">Previous</string>
+    <string name="i_know_image">I know image</string>
+    <string name="i_know">I know</string>
+    <string name="learn_it_image">Learn it image</string>
+    <string name="learn_it">Learn it</string>
+    <string name="empty_data_image">Empty data image</string>
+    <string name="in_this_theme_there_is_no_word">In this theme there is no word</string>
+    <string name="in_progress_courses">In progress courses</string>
+    <string name="empty_in_progress_list_image">Empty in progress list image</string>
+    <string name="looks_like_it_s_empty_start_course_now">Looks like it\'s empty\nstart course now</string>
+    <string name="start_course">Start course</string>
+    <string name="chameleon_image">Chameleon image</string>
+    <string name="congratulation_you_found_patrik">Congratulation\nYou found Patrik!</string>
+    <string name="main">Main</string>
+    <string name="courses">Courses</string>
+    <string name="profile">Profile</string>
+    <string name="select_account">Select account</string>
+    <string name="learning_ability">Learning ability</string>
+    <string name="learning_progress">Learning progress</string>
+    <string name="export_statistic">Export statistic</string>
+    <string name="you_know_everything_from_this_lecture">You know everything from this lecture</string>
+    <string name="reset_lecture">Reset lecture</string>
+    <string name="log_in">Log in</string>
+    <string name="use_science">Use science</string>
+    <string name="are_you_sure_replacing_player_this_is_irreversible_operation">Are you sure replacing player?\nThis is irreversible operation.</string>
+    <string name="replace">Replace</string>
+    <string name="cancel">Cancel</string>
+    <string name="fill_this_line">Fill this line</string>
+    <string name="welcome_to_mindlearning">Welcome to <b>Mindlearning</b></string>
+    <string name="can_not_access_external_storage">Can not access external storage</string>
+    <string name="file_created_in_directory">File created in:</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="need_to_access_to_external_storage_to_export_the_statistic_file">We need access to external storage to export the statistic file</string>
+    <string name="there_is_no_data_for_chart">There is no data for chart</string>
+    <string name="fills_by_intelligence_type">Fills by intelligence type</string>
+    <string name="fills_by_word_theme">Fill by word theme</string>
+    <string name="add_account">Add account</string>
+    <string name="user_exist_with_same_name">User exist with same name</string>
+    <string name="in_progress_courses_progress">Progress</string>
+
+
+</resources>
