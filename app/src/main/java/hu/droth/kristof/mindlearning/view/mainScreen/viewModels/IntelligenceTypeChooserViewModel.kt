@@ -52,7 +52,13 @@ class IntelligenceTypeChooserViewModel @ViewModelInject constructor(
                 Pair(dataMap.first, 0.0)
             }
         }
-       _recommendedLearningType.postValue(result.sortedByDescending { it.second }[0].first)
+        val sorted = result.sortedByDescending { it.second }
+        val recommendedIntelligenceType = if(sorted.isEmpty()){
+            IntelligenceType.VERBAL
+        }else{
+            sorted[0].first
+        }
+       _recommendedLearningType.postValue(recommendedIntelligenceType)
     }
 
 

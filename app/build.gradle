@@ -7,7 +7,19 @@ apply plugin: "androidx.navigation.safeargs"
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'
 
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 android {
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
 
@@ -16,7 +28,9 @@ android {
         minSdkVersion 26
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"
+        versionName "1"
+
+        buildConfigField("String", "PIXABAYAPIKEY", keystoreProperties['pixaBayApiKey'])
 
         javaCompileOptions {
             annotationProcessorOptions {
@@ -25,6 +39,7 @@ android {
             }
         }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
     }
 
     compileOptions {
@@ -50,6 +65,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable true
+            signingConfig signingConfigs.release
+
         }
     }
 }
@@ -80,7 +98,6 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     //noinspection GradleDependency
     implementation 'androidx.preference:preference-ktx:1.1.1'
-
 
 
     //Navigation component

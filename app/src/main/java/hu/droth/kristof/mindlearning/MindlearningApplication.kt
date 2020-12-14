@@ -15,7 +15,7 @@ class MindlearningApplication : Application() {
             FirebaseCrashlytics.getInstance().recordException(throwable)
             Toast.makeText(
                 applicationContext,
-                throwable.message ?: "Unknown error, try to restrart app",
+                throwable.message ?: "Unknown error, try to restart app",
                 Toast.LENGTH_LONG
             ).show()
         }

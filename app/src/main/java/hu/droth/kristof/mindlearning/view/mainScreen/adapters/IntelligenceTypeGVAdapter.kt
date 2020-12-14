@@ -115,23 +115,27 @@ class IntelligenceTypeGVAdapter(
                 )
             }
             IntelligenceType.RECOMMENDED_LEARNING -> {
-                if (recommendedLearningIntelligenceType == IntelligenceType.VISUAL) {
-                    bundleOf(
-                        "intelligenceType" to enum[position],
-                        "wordTheme" to wordTheme,
-                        "blurType" to BlurType.NONE
-                    )
-                } else if (recommendedLearningIntelligenceType == IntelligenceType.VISUAL_HARD) {
-                    bundleOf(
-                        "intelligenceType" to enum[position],
-                        "wordTheme" to wordTheme,
-                        "blurType" to BlurType.BLUR
-                    )
-                } else {
-                    bundleOf(
-                        "wordTheme" to wordTheme,
-                        "intelligenceType" to enum[position]
-                    )
+                when (recommendedLearningIntelligenceType) {
+                    IntelligenceType.VISUAL -> {
+                        bundleOf(
+                            "intelligenceType" to enum[position],
+                            "wordTheme" to wordTheme,
+                            "blurType" to BlurType.NONE
+                        )
+                    }
+                    IntelligenceType.VISUAL_HARD -> {
+                        bundleOf(
+                            "intelligenceType" to enum[position],
+                            "wordTheme" to wordTheme,
+                            "blurType" to BlurType.BLUR
+                        )
+                    }
+                    else -> {
+                        bundleOf(
+                            "wordTheme" to wordTheme,
+                            "intelligenceType" to recommendedLearningIntelligenceType
+                        )
+                    }
                 }
             }
             else -> {
